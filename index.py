@@ -9,13 +9,23 @@ stores = [
     './database/tienda_4.csv'
 ]
 
-column = 'Precio'
 
 def total_price(url, column):
     df = pd.read_csv(url)
-    total = df[column].sum()
-    print(f'{url} → Total {column}: {total}')
+    total = df['Precio'].sum()
+    print(f'{url} → Total de Precio: {total}')
 
-# Llama a la función para cada archivo
 for store in stores:
-    total_price(store, column)
+    total_price(store, 'Precio')
+
+#########################################################################
+
+def count_product_by_category(url):
+    df = pd.read_csv(url)
+    count = df['Categoría del Producto'].value_counts()
+    print(f'{url} → Cantidad de productos por categoría: {count}')
+    return count
+
+for store in stores:
+    count_product_by_category(store)
+
