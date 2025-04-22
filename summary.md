@@ -1,6 +1,6 @@
 # Resumen de la actividad
 
-## tienda que más ingresos ha tenido segun columna de Precios
+## tienda que más ingresos ha tenido segun columna de Precios ( peor tienda 4 )
 - Tienda 1: 1150880400.0  => primer lugar
 - Tienda 2: 1116343500.0  => segundo lugar
 - Tienda 3: 1098019600.0  => tercero lugar
@@ -46,3 +46,10 @@ Electrodomésticos          254
 Artículos para el hogar    201
 Libros                     187
 Instrumentos musicales     170
+
+
+## promedio de calificación de las tiendas ( peor tienda 4 )
+- Tienda 1: 3.9766 => aprox : 4.00
+- Tienda 2: 4.0373 => aprox : 4.00
+- Tienda 3: 4.0483 => aprox : 4.00 ( gana sin redondedo )
+- Tienda 4: 3.9957 => aprox : 4.00 ( peor tienda calificada )
