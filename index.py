@@ -46,3 +46,26 @@ for store in stores:
     average_qualification(store)
 
 #########################################################################
+
+
+def better_selling_product(url):
+    df = pd.read_csv(url)
+    count = df['Categoría del Producto'].value_counts()
+    print(f'{url} → Productos más vendidos: {count}')
+    return count
+
+for store in stores:
+    better_selling_product(store)
+
+#########################################################################
+
+def average_shipping_cost(url):
+    df = pd.read_csv(url)
+    average = df['Costo de envío'].mean()
+    print(f'{url} → Promedio de Costo de envío: {average}')
+    return average
+
+for store in stores:
+    average_shipping_cost(store)
+
+#########################################################################
