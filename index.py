@@ -10,15 +10,17 @@ stores = [
 ]
 
 
-def total_price(url, column):
+def total_price(url):
     df = pd.read_csv(url)
     total = df['Precio'].sum()
     print(f'{url} → Total de Precio: {total}')
 
+
 for store in stores:
-    total_price(store, 'Precio')
+    total_price(store)
 
 #########################################################################
+
 
 def count_product_by_category(url):
     df = pd.read_csv(url)
@@ -26,6 +28,21 @@ def count_product_by_category(url):
     print(f'{url} → Cantidad de productos por categoría: {count}')
     return count
 
+
 for store in stores:
     count_product_by_category(store)
 
+#########################################################################
+
+
+def average_qualification(url):
+    df = pd.read_csv(url)
+    average = df['Calificación'].mean()
+    print(f'{url} → Promedio de Calificación: {average}')
+    return average
+
+
+for store in stores:
+    average_qualification(store)
+
+#########################################################################
