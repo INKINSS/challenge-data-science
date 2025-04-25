@@ -26,9 +26,15 @@ values = [valor for _, valor in result]
 
 # colores para la grafica
 colors = cm.tab10(np.linspace(0, 1, len(values)))
+fig, ax = plt.subplots()
+
+labels = [f"${v/1e3:,.2f}K".replace('.', ',') for v in values]
 
 # grafica de barras
-plt.bar(store_name, values, color=colors)
-plt.title('Costo de envío promedio')
-plt.ylabel('Costo de envío promedio')
+bars = ax.bar(store_name, values, color=colors)
+
+ax.bar_label(bars, labels=labels)
+
+ax.set_title('Costo de envío promedio')
+ax.set_ylabel('Costo de envío promedio')
 plt.show()
