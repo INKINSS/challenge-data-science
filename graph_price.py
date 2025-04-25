@@ -19,17 +19,20 @@ for url, store in stores:
     total = df['Precio'].sum()
     result.append((store, total))
 
-# separa nombres y valores
-
 store_name = [nombre for nombre, _ in result]
 values = [valor for _, valor in result]
 
-# genera colores personalizados por tienda
 colors = cm.tab10(np.linspace(0, 1, len(values)))
 
-# grafico
+fig, ax = plt.subplots()
 
-plt.bar(store_name, values, color=colors)
-plt.title('ventas totales')
-plt.ylabel('Total de ventas')
+bars = ax.bar(store_name, values, color=colors)
+
+# Formatea valores a millones con separador coma y símbolo $
+labels = [f"${v/1e6:,.2f}M".replace('.', ',') for v in values]
+
+ax.bar_label(bars, labels=labels)
+
+ax.set_title('Ventas Totales')
+ax.set_ylabel('Total de ventas')
 plt.show()
