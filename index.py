@@ -50,7 +50,7 @@ for store in stores:
 
 def better_selling_product(url):
     df = pd.read_csv(url)
-    count = df['Categoría del Producto'].value_counts()
+    count = df['Producto'].value_counts()
     print(f'{url} → Productos más vendidos: {count}')
     return count
 
