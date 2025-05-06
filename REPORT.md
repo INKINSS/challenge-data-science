@@ -45,8 +45,12 @@ El número de productos por categoría también se utilizó como indicativo de v
 
 **Observaciones**:
 
-- Tienda 3 se destaca en la venta de productos de categoría Muebles.
-- Tienda 4 tiene menor rotación en la categoría Instrumentos musicales.
+- Tienda 1 tiene 3 productos con mas ventas ( Microondas, TV LED UHD 4K, Armario )
+- Tienda 2 tiene 1 producto con mas ventas ( Iniciando en programación )
+- Tienda 3 tiene 1 producto con mas ventas ( Kit de bancas )
+- Tienda 4 tiene 1 producto con mas ventas ( Cama box )
+
+siendo la tienda 3 la que tiene el producto con menos ventas.
 
 ### 5. Coste de Envío Promedio
 

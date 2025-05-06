@@ -54,6 +54,12 @@ Instrumentos musicales     170 ( menos vendido en tienda 4 )
 - Tienda 3: 4.0483 => aprox : 4.00 ( gana sin redondedo )
 - Tienda 4: 3.9957 => aprox : 4.00 ( peor tienda calificada )
 
+## productos más vendidos por tienda
+- Tienda 1: Microondas, TV LED UHD 4K, Armario ( todos con 60 ventas )
+- Tienda 2: Iniciando en programación ( 65 ventas )
+- Tienda 3: Kit de bancas ( 57 ventas )
+- Tienda 4: Cama box ( 62 ventas )
+
 ## promedio de costo de envío de las tiendas ( peor tienda 4 )
 - Tienda 1: 26018.6095  => primer lugar
 - Tienda 2: 25216.2356  => segundo lugar
